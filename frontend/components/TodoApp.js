@@ -138,7 +138,7 @@ class TodoApp extends Component {
 
         return (
             <div className="TodoApp">
-                <h1 className="app-title">todos</h1>
+                <h1 className="app-title">todos App Reactor</h1>
                 <div className="main">
                     <div className="edit-section">
                         <input className="new-todo"
