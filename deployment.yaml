@@ -75,7 +75,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: stats-worker
-        image: azdspublic/todo-app-stats-worker
+        image: vickybytes.azurecr.io/stats-worker:v1
         env:
         - name: STATS_QUEUE_URI
           value: amqp://stats-queue
@@ -101,7 +101,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: stats-api
-        image: azdspublic/todo-app-stats-api
+        image: vickybytes.azurecr.io/stats-api
         livenessProbe:
           httpGet:
             path: /hello
@@ -173,7 +173,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: frontend
-        image: azdspublic/todo-app-frontend
+        image: vickybytes.azurecr.io/frontend:v1
         env:
         - name: STATS_QUEUE_URI
           value: amqp://stats-queue
@@ -207,7 +207,7 @@ spec:
         kubernetes.io/os: linux
       containers:
       - name: database-api
-        image: azdspublic/todo-app-database-api
+        image: vickybytes.azurecr.io/database-api:v1
         env:
         - name: MONGO_CONNECTION_STRING
           value: mongodb://todos-db
