@@ -1,5 +1,18 @@
 {
     "version": "2.0.0",
     "tasks": [
+        {
+            "label": "bridge-to-kubernetes.resource",
+            "type": "bridge-to-kubernetes.resource",
+            "resource": "stats-api",
+            "resourceType": "service",
+            "ports": [
+                3001
+            ],
+            "targetCluster": "kubeshow-one",
+            "targetNamespace": "todo-app",
+            "useKubernetesServiceEnvironmentVariables": false,
+            "isolateAs": "vivsridh-90a2"
+        }
     ]
 }

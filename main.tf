@@ -36,7 +36,7 @@ resource "azurerm_kubernetes_cluster" "example" {
     node_count = 2
     vm_size    = "Standard_B2s"
     enable_auto_scaling = true
-    max_count = 6
+    max_count = 7
     min_count = 2
   }
 
