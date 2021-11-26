@@ -1,4 +1,13 @@
-on: [push]
+#on: [push]
+name: Kubernetes Build & Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      remarks:
+        description: 'Reason for triggering the workflow run'
+        required: false
+        default: 'Build & Deploy'
 
 # Environment variables available to all jobs and steps in this workflow
 env:
