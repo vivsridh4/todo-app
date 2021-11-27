@@ -138,7 +138,7 @@ class TodoApp extends Component {
 
         return (
             <div className="TodoApp">
-                <h2 className="app-title">todo App at Reactor Bangalore </h2>
+                <h2 className="app-title">todo App for Azure Kubernetes Day!</h2>
                 <div className="main">
                     <div className="edit-section">
                         <input className="new-todo"
