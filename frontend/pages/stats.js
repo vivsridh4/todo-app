@@ -56,7 +56,7 @@ export default class Stats extends React.Component {
                     <div className="row">
                         <div className="col">Created</div>
                         <div className="col">Completed</div>
-                        <div className="col">Deleted</div>
+                        <div className="col">Deleted test</div>
                     </div>
                     <div className="row">
                         <div className="col todo-metric">{this.state.stats.todosCreated}</div>
