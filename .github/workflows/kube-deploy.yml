@@ -12,10 +12,10 @@ on:
 # Environment variables available to all jobs and steps in this workflow
 env:
   REGISTRY_NAME: vickybytes
-  CLUSTER_NAME: kubeshow-one
-  CLUSTER_RESOURCE_GROUP: devopsprod
+  CLUSTER_NAME: kubeshow
+  CLUSTER_RESOURCE_GROUP: dotslash
   NAMESPACE: todo-app
-  SECRET: vickbytes
+  SECRET: vickybytes-sec
   APP_NAME_DB: database-api
   APP_NAME_FE: frontend
   APP_NAME_STATS_API: stats-api
