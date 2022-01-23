@@ -1,2 +1,2 @@
-TODO App for demo.
+TODO App to demo Bridge to Kubernetes.
 
